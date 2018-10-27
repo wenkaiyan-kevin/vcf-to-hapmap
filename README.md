@@ -14,6 +14,7 @@ gatk VariantsToTable \
 Note: you need to specify `INPUT_VCF`, and `OUTPUT.table`.
 
 Then use the R script called from the command line to convert the variant table to hapmap. 
+
 Note: this is only tested for haploid, biallelic SNP data.
 
 - Second step

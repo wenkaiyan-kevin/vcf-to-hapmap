@@ -6,7 +6,7 @@
 Use the GATK tool, [VariantsToTable](https://software.broadinstitute.org/gatk/documentation/tooldocs/current/org_broadinstitute_hellbender_tools_walkers_variantutils_VariantsToTable.php), to first select only genotype information from the vcf file.
 ```
 gatk VariantsToTable \
--V 0000.vcf \
+-V test.vcf \
 -R Genome.fa \
 -F CHROM -F POS -F REF -F ALT -GF GT \
 -O output.table   

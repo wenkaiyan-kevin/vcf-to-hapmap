@@ -19,7 +19,7 @@ if (is.null(opt$input)){
 
 vcf <- read.table(opt$input, header=TRUE, stringsAsFactors = FALSE)
 
-rs <- NA
+rs <- paste(vcf$CHROM, vcf$POS, sep = "_")
 alleles <- paste(vcf$REF, vcf$ALT, sep = "/")
 chrom <- vcf$CHROM
 pos <- vcf$POS

@@ -40,7 +40,7 @@ temp <- data.frame(t(apply(vcf[c(-1:-4)],1,f1)))
 
 genotype_df <- data.frame(t(apply(temp,1,f2)))
 
-hapmap <- cbind(rs, alleles, chrom, pos, strand, assembly, center, protLSID, assayLSID, panelLSID, Qcode, genotype_df)
+hapmap <- cbind(rs, alleles, chrom, pos, strand, assembly, center, protLSID, assayLSID, panelLSID, QCcode, genotype_df)
 
 
 write.table(hapmap, opt$output, row.names=FALSE, quote=FALSE, sep="\t")
